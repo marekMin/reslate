@@ -6,9 +6,11 @@ const markdownItAnchor = require('markdown-it-anchor');
 
 function slugify(s) {
     return (
-        String(s).trim().toLowerCase()
-        .replace(/[\(\)]/g, '')
-        .replace(/\s+/g, '-')
+        String(s)
+            .trim()
+            .toLowerCase()
+            .replace(/[\(\)]/g, '')
+            .replace(/\s+/g, '-')
     );
 }
 
